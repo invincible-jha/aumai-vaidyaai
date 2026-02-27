@@ -7,8 +7,10 @@ from enum import Enum
 from pydantic import BaseModel, Field
 
 MEDICAL_DISCLAIMER = (
-    "This tool does not provide medical advice."
-    " Consult a qualified healthcare professional."
+    "IMPORTANT MEDICAL DISCLAIMER: This tool does NOT provide medical advice, diagnosis, or treatment."
+    " Symptom analysis is based on keyword matching only and may be inaccurate."
+    " Always consult a qualified healthcare professional for medical concerns."
+    " In emergencies, contact your nearest hospital immediately."
 )
 
 __all__ = [

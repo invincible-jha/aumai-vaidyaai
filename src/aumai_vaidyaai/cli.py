@@ -56,7 +56,10 @@ def assess(symptoms: str, system: str) -> None:
         click.echo(f"\nPOSSIBLE CONDITIONS:")
         for cond in assessment.possible_conditions[:5]:
             click.echo(f"  - {cond['name']} [ICD: {cond.get('icd_code', 'N/A')}]")
-            click.echo(f"    Likelihood: {cond.get('likelihood_pct', 0)}%")
+            click.echo(
+                f"    Likelihood: {cond.get('likelihood_pct', 0)}%"
+                f" ({cond.get('likelihood_note', 'keyword-based estimate only')})"
+            )
             click.echo(f"    {cond.get('description', '')}")
     else:
         click.echo("\nNo specific conditions matched. Consult a healthcare professional.")
@@ -81,7 +84,7 @@ def symptoms() -> None:
 
 @main.command("serve")
 @click.option("--port", default=8000, help="Port to serve on")
-@click.option("--host", default="0.0.0.0", help="Host to bind to")
+@click.option("--host", default="127.0.0.1", help="Host to bind to")
 def serve(port: int, host: str) -> None:
     """Start the VaidyaAI API server."""
     try:

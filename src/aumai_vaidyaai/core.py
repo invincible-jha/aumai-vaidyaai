@@ -258,6 +258,9 @@ class ConditionMatcher:
                     "icd_code": condition["icd_code"],
                     "description": condition["description"],
                     "likelihood_pct": likelihood,
+                    "likelihood_note": (
+                        "Estimated by keyword matching only — not a clinical probability."
+                    ),
                     "urgency": condition["urgency"],
                     "matched_symptoms": [ms for ms in matching_syms if ms in symptom_names],
                 }

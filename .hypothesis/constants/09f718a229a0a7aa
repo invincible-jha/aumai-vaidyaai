@@ -1,0 +1,4 @@
+# file: M:\Project DarkMatter\workspace\aumai-vaidyaai\src\aumai_vaidyaai\models.py
+# hypothesis_version: 6.151.9
+
+['Body system category', 'Condition', 'Condition name', 'HealthAssessment', 'MEDICAL_DISCLAIMER', 'MedicalSystem', 'Recommendation', 'SimpleSymptom', 'Symptom', 'SymptomAssessment', 'SymptomCategory', 'Unique symptom code', '^(green|amber|red)$', 'allopathy', 'ayurveda', 'digestive', 'general', 'homeopathy', 'mild', 'musculoskeletal', 'neurological', 'respiratory', 'siddha', 'skin', 'unani', 'yoga']

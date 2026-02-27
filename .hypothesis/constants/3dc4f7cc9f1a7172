@@ -1,0 +1,4 @@
+# file: M:\Project DarkMatter\workspace\aumai-vaidyaai\src\aumai_vaidyaai\cli.py
+# hypothesis_version: 6.151.9
+
+[8000, ',', '--host', '--port', '--symptoms', '--system', '127.0.0.1', 'Host to bind to', 'Port to serve on', '_', '__main__', 'allopathy', 'assess', 'emergency', 'serve', 'symptoms']
